@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmer Advisor</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🌱 Farmer Advisor</h1>
+      <p>Ask a farming question. Answers come from the knowledge base, with sources.</p>
+    </header>
+
+    <main id="chat" class="chat">
+      <div class="msg bot">
+        Hello! Ask me about crops, soil or pest management.
+      </div>
+    </main>
+
+    <div class="examples" id="examples">
+      <button type="button">How do I control early blight in tomato?</button>
+      <button type="button">What soil pH is best for tomato?</button>
+      <button type="button">How can I manage whiteflies?</button>
+    </div>
+
+    <form id="form" class="composer">
+      <input id="question" type="text" placeholder="Type your question..." autocomplete="off" required />
+      <button id="send" type="submit">Ask</button>
+    </form>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
